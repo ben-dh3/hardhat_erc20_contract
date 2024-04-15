@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 async function main() {
-    const Token = await hre.ethers.getContractFactory("Token");
+    const Token = await hre.ethers.getContractFactory("BasedPepe");
     const token = await Token.deploy();
     console.log("token deployed to:", token.target);
 }
